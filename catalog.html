@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700,500italic&subset=cyrillic,cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<title>Каталог товаров</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="topline-header clearfix">
+				<a class="logo"><img src="img/img-logo-1.png" width="139" hight="56" alt="logo"></a>
+				<div class="cart"><a href="#"><i class="icon-basket"></i>Корзина</a></div>
+				<nav class="navigation-menu">
+					<ul>
+						<li><a href="">Студия</a></li>
+						<li><a href="">Клиенты</a></li>
+						<li class="current-page"><a href="">Магазин</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="welcome-title">Добро пожаловать в магазин готовых макетов</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container clearfix">
+			<div class="filter">
+				<form action="/echo" method="post" oninput="priceoutput.value=priceinput.value">
+					<fieldset>
+						<legend class="price">Стоимость:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale"><div class="bar" style="width:70%"></div></div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<span>От</span>
+								<input class="min-price" type="text" value="0">
+								<span>До</span>
+								<input class="max-price" type="text" value="15 000">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="net">
+						<legend>Сетка:</legend>
+						<input type="radio" name="net" id="adaptive" checked>
+						<label for="adaptive">Адаптивная</label>
+						<br>
+						<input type="radio" name="net" id="fixed">
+						<label for="fixed">Фиксированная</label>
+						<br>
+						<input type="radio" name="net" id="flexible">
+						<label for="flexible">Резиновая</label>
+					</fieldset>
+
+					<fieldset class="filter-features">
+						<legend>Особенности:</legend>
+						<input type="checkbox" name="features" id="slider" checked>
+						<label for="slider">Слайдер</label>
+						<input type="checkbox" name="features" id="features-block">
+						<label for="features-block">Блок преимуществ</label>
+						<input type="checkbox" name="features" id="news" checked>
+						<label for="news">Новости</label>
+						<input type="checkbox" name="features" id="gallery">
+						<label for="gallery">Галерея</label>
+						<input type="checkbox" name="features" id="busket">
+						<label for="busket">Корзина</label>
+					</fieldset>
+
+					<input type="submit" value="показать">
+				</form>
+			</div>
+			<section class="models">
+				<ul class="sort-by clearfix">
+					<li>Сортировать:</li>
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li class="active"><a href="#">По функционалу</a></li>
+					<li><i class="icon-up-dir"></i></li>
+					<li><i class="icon-down-dir"></i></li>
+				</ul>
+				<div class="model-items clearfix">
+					<div class="model-item">
+						<img src="img/img-model-1.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">AVIATOR</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+					<div class="model-item">
+						<img src="img/img-model-2.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">SCENE</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+					<div class="model-item">
+						<img src="img/img-model-3.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">FORTE</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+					<div class="model-item">
+						<img src="img/img-model-4.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">MODERN THAI</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+					<div class="model-item">
+						<img src="img/img-model-5.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">AVENUE</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+					<div class="model-item">
+						<img src="img/img-model-6.jpg" width="240" height="240" alt="portfolio-model">
+						<div class="hover-block">
+							<div class="model-title">DOVETAIL</div>
+							<p>
+								Интернет-магазин с личным кабинетом
+							</p>
+							<a href="#" class="btn">Цена</a>
+						</div>
+					</div>
+				</div>
+				<ul class="paginator">
+					<li class="current-page"><a>1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">Следующая</a></li>
+				</ul>
+			</section>
+		</div>
+	</main>
+	<section class="map">
+		<div class="nerds-contacts">
+			<h3>Nerds Design Studio</h3>
+			<div class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</div>
+			<div class="tel">тел. +7(812) 275-75-75</div>
+			<a class="btn contacts-btn" href="modalform.html">Напишите нам</a>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2921828078935!2d30.3222115820905!3d59.93903873159056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1430575872025" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+	</section>
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<div class="social-networks">
+				<div class="social-btn"><a href="#"><i class="icon-vk"></i></a></div>
+				<div class="social-btn"><a href="#"><i class="icon-facebook"></i></a></div>
+				<div class="social-btn"><a href="#"><i class="icon-instagramm"></i></a></div>
+			</div>
+			<div class="social-discount">
+				<h4>Давайте дружить, это выгодно!</h4>
+				<p>Скидка 10% для друзей из социальных сетей</p>
+			</div>
+		</div>
+	</footer>
+
+	<form class="modal-form" action="/ech" method="post">
+		<div class="modal-form-close"></div>
+		<div class="name-mail clearfix">
+			<div class="half-left">
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+			</div>
+			<div class="half-right">
+				<label for="e-mail">Ваш e-mail:</label>
+				<input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
+			</div>
+		</div>
+		<div class="comments">
+			<label for="text">Текст письма</label>
+			<textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+		</div>
+			<input class="btn-send" type="submit" id="submit" value="Отправить">
+			<a class="btn-cancel" href="#">Отмена</a>
+		</form>
+		<script src="js/js.js"></script>
+</body>
+</html>
